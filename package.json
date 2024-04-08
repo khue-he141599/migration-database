@@ -1,0 +1,31 @@
+{
+  "name": "@pf126/schemas",
+  "version": "3.14.7",
+  "description": "Database schemas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js",
+    "release": "release-it --ci --verbose --no-increment",
+    "_upgrade": "ncu --upgrade --upgradeAll && yarn install && yarn upgrade"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com:platform126/database-schemas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/platform126/database-schemas/issues"
+  },
+  "homepage": "https://gitlab.com/platform126/database-schemas#readme",
+  "dependencies": {
+    "mongoose": "5.6.13",
+    "rand-token": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.7.29",
+    "@types/node": "^12.7.2",
+    "release-it": "14.2.1"
+  }
+}
